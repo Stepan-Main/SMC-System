@@ -1,0 +1,329 @@
+Start Bot: node .
+ShutDown Bot: Ctrl + C
+
+throw err - This is error happen if have no Internet
+
+is Leaved. - Deleted in 02.07.2020
+
+- Knows -
+
+message.channel.messages.deleteAll(); - Deleting All Messages
+message.channel.guild - Name Server
+message.channel.name - Name Channel
+
+Correct Work!
+var textChannel = message.guild.channels.find(textC => textC.name == "test1");
+message.guild.channels.get(textChannel.id).send("test Here!");
+console.log(textChannel.name);
+
+Put message and deleting for seconds
+message.channel.send("i'm delete my message").then(d_msg => {
+    d_msg.delete(2000);
+})
+
+GetServerID
+robot.guilds.get("436051576688214018")
+GetUserID
+robot.users.get("436047624097759233")
+GetRoleName
+robot.guilds.get("436051576688214018").roles.get("528605425785110530").name
+
+When User start typing
+robot.on('typingStart', () => {
+    Console.log("Test!");
+})
+
+When User stop typing
+robot.on('typingStop', () => {
+    Console.log("Test!");
+})
+
+- - - - -
+
+{
+    "Stepan-Main": {
+        "game_0_1000000": {
+            "score": 999822
+        }
+    },
+    "ø𝙊𝙢𝙚𝙜𝙞𝙤𝙣𝘿𝙞𝙨𝙘𝙤𝙧𝙙ø": {
+        "game_0_1000000": {
+            "score": 991203
+        }
+    }
+}
+
+- - - - -
+
+//513609163713019904, 548977134765342746
+console.log('Comment is putted by: '+message.author.username+": "+message.content)
+    robot.guilds.get('436047624097759233')
+    robot.users.get('436047624097759233')
+if(message.content == "test"){
+    var textChannel = message.guild.channels.find("name", "test1");
+    console.log(message.guild.channels.find("test1"));
+    message.channel.send("TextChannel is found.");
+}
+robot.on('', () => {
+    console.log('Bot is shutting down.')
+    robot.channels.get('509707618042904578').send('SMC-Bot is Shutting down...');
+})
+robot.on('ready', member => {
+    member.guild.channels.get('509707618042904578').send('SMC-Bot is Activated');
+})
+robot.on('ready', bot => {
+    bot.guild.channels.get('509707618042904578').send('SMC-Bot is Activated');
+    bot.guild.channels.get('509707618042904578').send('SMC-Bot is Started');
+})
+
+fs.writeFile ("./commands/notes.json", JSON.stringify (robot.msgs, null, 4), err => {
+    if (err) throw err;
+});
+
+//Tests
+if(message.content == "smc.self"){
+    console.log(message.author.username)
+    message.reply(message.author.username)
+}
+
+var number = 0;
+if(message.content == "smc.TestPlus"){
+    number += 1
+    message.reply(number)
+}
+if(message.content == "smc.TestMinus"){
+    number -= 1
+    message.reply(number)
+}
+
+if(message.content == "smc.control.Delete-10"){
+    var messages = message.content.;
+    messages.delete()
+}
+if(message.content == "smc.convert"){
+    message.reply(" ")
+}
+if (msg.includes('FUCK YOU')){
+    message.delete()
+    message.reply("[!]You tease him/us![!]")
+    console.log('Warning! - The Bad Word is detected!\n' + message.content)
+}
+if (msg.includes('TEST')){
+    console.log('Test Comment is detected!\n' + message.content)
+    message.delete()
+}
+||Text||
+console.log(member)
+message.reply("[!]Not Working! Please do again![!]")
+member.reply('User' + member.user.username + " is Joined.")
+member.reply(member.author + " is Join.")
+
+robot.once('message', messageStart => {
+    messageStart.reply("SMC System is Working!")
+})
+robot.file1 = require("./commands/texts1.txt");
+class Test {
+    if(){
+        
+    }
+}
+robot.on("guildMemberAdd", memberNeedRole =>{
+    memberNeedRole.addRole("544920164056039426")
+    memberNeedRole.send("Role is added");
+})
+
+if(message.content == "smc.Google"){
+    window.open("https://www.google.com", "_blank", "toolbar=yes,top=500,left=500,width=400,height=400")
+}
+
+robot.file = require(path);
+fs.writeFile (path, JSON.stringify (textToFile, null, 4), err => {
+    if (err){
+        console.error(err);
+    }
+});
+fs.writeFile(path, JSON.stringify (textToFile, null, 4), null);
+
+robot.testFile = require("./commands/testFile.json");
+robot.testFile[message.author.username] = {
+    test: "File is writed"
+}
+fs.writeFile ("./commands/testFile.json", JSON.stringify (robot.testFile, null, 4), err => {
+    if (err) throw err;
+});
+message.channel.send("Message is writed");
+
+catchMessage.reply("[!]Error![!]\nSorry! we have a problem with the file system!");
+
+
+OtherThings1
+//var role = message.guild.roles.find("name", "Card-8");
+//var role = message.guild.roles.find(role => role.name == "Card-8");
+/*
+var role = message.guild.roles.find(role => role == "Card-8");
+var test2 = message.members.find("nickname", "StepanMain-20");
+*/
+//message.guild.channels.find("name", "test1");
+
+//var test2 = message.guild.members.find("nickname", "StepanMain-20");
+//test2.addRole(role);
+
+//var test2 = message.guild.members.find(member => member.name == "StepanMain-20");
+
+/*var textChannel = message.guild.channels.find(textC => textC.name == "test1");
+textChannel.guild.members.get()
+message.guild.channels.get()*/
+
+
+//message.author.username
+//message.channel.send(role.id + " / " + role.name + " is Added to " + message.author.username);
+//console.log(message.author.id);
+//message.member.addRole(role.id)
+/*var test2 = message.guild.members.find(member => member.id == message.author.id);
+console.log(test2.user.username);
+test2.addRole(role.id);*/
+/*mention = message.mentions.users.first(message.member.id);
+message.guild.member(mention).addRole("544920164056039426");*/
+//message.guild.member(message.member).addRole("544920164056039426");
+
+//console.log(message.member.roles.keyArray().toString());
+/*var roles = ['436051576688214018','526695419422572544','534759716749049856','579705203050414080','494176139477254147','474489147231436804','531474686899519488','493727802135281674','495148694249668619','523864318551261195','536246793587916820','684010334075486228','530114871736401943','552625928107196441'];
+message.guild.member(message.member).setRoles(roles);*/
+//console.log(message.member.roles.keyArray().toString());
+//message.guild.member(robot.).setRoles(roles);
+
+//message.member.client.m
+//var memberRole = message.member.guild.roles.get("528605425785110530");
+//message.member.addRole("528605425785110530");
+//message.channel.send("Added role?");
+//robot.guilds.get("436051576688214018").members.get("436047624097759233").addRole(robot.guilds.get("436051576688214018").roles.get("528605425785110530"));//setRoles();
+
+//message.guild.member(message.member).setRoles(['474489147231436804','493727802135281674','494176139477254147','495148694249668619','523864318551261195','526695419422572544','530114871736401943','534759716749049856','536246793587916820','552625928107196441','579705203050414080','684010334075486228']);
+//message.member.addRole("544920164056039426");
+
+/*var membr = message.guild.members.find(member => member.displayName == "Stepan-Main");
+message.channel.send(membr);*/
+//message.channel.send(test2.nickname);
+/*var testVar = message.guild.members.find("user", "Stepan-Main");
+message.channel.send(testVar.user.username);*/
+//message.member.addRole(role)
+//message.guild.members.find("name", message.author.username).addRole(role);
+
+/*let memberRole = message.member.guild.roles.find("name", "Card-10").id;
+message.member.addRole(memberRole);*/
+
+ *WindowOpen*
+
+// 'guildMemberAdd' 'guildMemberRemove'
+
+//robot.channels.get('509707618042904578').send(allTexts);
+//robot.channels.get('675018215780253706').send(allTexts);
+
+/*robot.usersUse["users"] = robot.users.get("436047624097759233");
+WriteFile(robot.usersUse, "./commands/users.json");*/
+//console.log(robot.guilds.get("436051576688214018").roles.get("528605425785110530").name);
+//robot.users.exists()
+
+UnhandledPromiseRejectionWarning: DiscordAPIError: Cannot send an empty message
+(05.01.2021 - 20.02.2021)
+
+- Deleted: 03.12.2020 -
+// Control: 1-(smc.About-Server)
+if(message.content == "smc.About-Server"){
+    if(message.author.username == "Stepan-Main"){
+        message.channel.send(message.guild.name + " - Members: " + message.guild.memberCount)
+    }else{
+        message.reply("Sorry. but this command can use user Stepan Main only.")
+    }
+} // Stepan Main's Control
+// Stepan's Birthday - Added in 03.08.2020
+if ((day + "." + month) === "05.08") {
+    allTexts += "\nToday is Stepan's Birthday!";
+}
+
+- Deleted: 06.01.2021 -
+function BadMessages(badMessage, catchMessage) {
+    if (badMessage.includes('сук')){
+        badStep = 1;
+    }
+    if (badMessage.includes('бля')){
+        badStep = 1;
+    }
+    if (badMessage.includes('ёб')){
+        badStep = 1;
+    }
+    if (badMessage.includes('хуй')){
+        badStep = 1;
+    }
+    if (badMessage.includes('fuck')){
+        badStep = 1;
+    }
+    if (badMessage.includes('shit')){
+        badStep = 1;
+    }
+    if (badMessage.includes('bitch')){
+        badStep = 1;
+    }
+    /*if (badMessage.includes('frick')){
+        badStep = 1;
+    }*/ // Updated 04.01.2021 - Deleted 06.01.2021
+    if (!badMessage.includes("wass") && !badMessage.includes("asse") && !badMessage.includes("assu") && !badMessage.includes("glass")) {
+        if (badMessage.includes('ass')){
+            badStep = 1;
+        }
+    } // Updated 15.09.2020
+    if (badMessage.includes('fagot')){
+        badStep = 1;
+    }
+    if (badMessage.includes('nigga')){
+        badStep = 1;
+    }
+    if (badMessage.includes('boob')){
+        badStep = 2;
+    }
+    if (badMessage.includes('porn')){
+        badStep = 2;
+    }
+    if (badMessage.includes('dick')){
+        badStep = 2;
+    }
+    if (badMessage.includes('tit')){
+        badStep = 2;
+    }
+    if (badMessage.includes('penis')){
+        badStep = 2;
+    }
+    if (badMessage.includes('cock')){
+        badStep = 2;
+    }
+    if (badMessage.includes('pussy')){
+        badStep = 2;
+    }
+    if (!badMessage.includes('docum') && badMessage.includes('cum')){
+        badStep = 2;
+    } // Updated 04.11.2020
+    if (badMessage.includes('lmao')){
+        badStep = 3;
+    }// Added 01.09.2020
+    /*if (badMessage.includes('WTF')){
+        badStep = 3;
+    }*/ // Added 01.09.2020
+    if (badMessage.includes('kurwa')){
+        badStep = 3;
+    }// Added 28.12.2020
+    if (badStep == 1){
+        console.log('Warning! - The Bad Word is detected!\n'+catchMessage.author.username+": "+catchMessage.content)
+        catchMessage.delete()
+        catchMessage.reply("[!]Bad Word![!]")
+    }
+    if (badStep == 2){
+        console.log('Warning! - The Bad Word is detected!\n'+catchMessage.author.username+": "+catchMessage.content)
+        catchMessage.delete()
+        catchMessage.reply("[!]Are you disgusting?[!]")
+    }
+    if (badStep == 3){
+        console.log('Warning! - The Bad Word is detected!\n'+catchMessage.author.username+": "+catchMessage.content)
+        catchMessage.delete()
+        catchMessage.reply("[!]We know about this word, and don't write this again![!]")
+    }
+}
